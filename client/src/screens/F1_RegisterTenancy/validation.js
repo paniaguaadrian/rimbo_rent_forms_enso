@@ -1,8 +1,8 @@
 export const isProperty = (values) => {
   let errors = {};
 
-  if (!values.building) {
-    errors.building = "Enter a building for the tenant.";
+  if (!values.rentalAddress) {
+    errors.rentalAddress = "Enter a rentalAddress for the tenant.";
   }
 
   if (!values.room) {

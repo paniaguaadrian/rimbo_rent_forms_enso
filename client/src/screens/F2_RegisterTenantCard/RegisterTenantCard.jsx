@@ -22,7 +22,7 @@ import WhatsappBubble from "../../components/WhatsappBubble/WhatsappBubble";
 // Images
 import RimboLogo from "../../images/rimbo-logo.png";
 import StripeLogo from "../../images/secure-payments.png";
-import StarCityImage from "../../images/starcity-image.png";
+import EnsoImage from "../../images/enso-coliving-success.jpg";
 
 // Styles
 import Loader from "react-loader-spinner";
@@ -229,7 +229,7 @@ const RegisterTenantCard = ({ t }) => {
             tenantsPhone,
             timestamps,
             agencyName: tenancyData.agent.agencyName,
-            building: tenancyData.property.building,
+            rentalAddress: tenancyData.property.rentalAddress,
             rentStartDate: tenancyData.rentStartDate,
             rentEndDate: tenancyData.rentEndDate,
           });
@@ -240,7 +240,7 @@ const RegisterTenantCard = ({ t }) => {
             tenantsPhone,
             timestamps,
             agencyName: tenancyData.agent.agencyName,
-            building: tenancyData.property.building,
+            rentalAddress: tenancyData.property.rentalAddress,
             rentStartDate: tenancyData.rentStartDate,
             rentEndDate: tenancyData.rentEndDate,
           });
@@ -424,7 +424,7 @@ const RegisterTenantCard = ({ t }) => {
                 <p>{t("cardsuccess.textTwo")}</p>
               </div>
               <div className={style.success_container_right}>
-                <img src={StarCityImage} alt="StarCity co-living logo" />
+                <img src={EnsoImage} alt="Enso co-living logo" />
               </div>
             </main>
             <div className={style.rimbo_sign_success}>

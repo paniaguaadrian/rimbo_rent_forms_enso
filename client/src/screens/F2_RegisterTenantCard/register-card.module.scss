@@ -513,11 +513,11 @@ input[type="text"]:focus {
 .hero_section_container h1 {
   @include xl {
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 300;
   }
   font-size: 3rem;
-  padding: 0 4rem;
-  font-weight: 200;
+  padding: 2rem 4rem;
+  font-weight: 300;
 }
 
 .form_full_container_success {
@@ -570,12 +570,12 @@ input[type="text"]:focus {
 .form_header_left_success p {
   @include xl {
     font-size: 1.3rem;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.8rem;
     margin-bottom: 2rem;
   }
-  font-size: 1.8rem;
-  font-weight: 100;
+  font-size: 1.6rem;
+  font-weight: 300;
   line-height: 1.8rem;
   margin-bottom: 2rem;
 }

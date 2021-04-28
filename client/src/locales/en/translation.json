@@ -18,8 +18,8 @@
       "subtitleThree": "Receive a response via email."
     },
     "stepZero": {
-      "building": "Rental Address",
-      "buildingPL": "Write the rental address",
+      "rentalAddress": "Rental Address",
+      "rentalAddressPL": "Write the rental address",
       "room": "Apartment/Room",
       "roomPL": "Write the apartment/room number",
       "rentAmount": "Monthly rent (in €)",

@@ -6,11 +6,11 @@ import {
 } from "./constants";
 
 export const DefaultTenancy = {
-  agencyName: "Starcity",
+  agencyName: "Enso",
   tenancyID: "",
 
   propertyDetails: {
-    building: "",
+    rentalAddress: "",
     room: "",
     rentAmount: "",
     rentStartDate: "",

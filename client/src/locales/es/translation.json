@@ -18,8 +18,8 @@
       "subtitleThree": "Recibirás una respuesta por correo electrónico."
     },
     "stepZero": {
-      "building": "Dirección del alquiler",
-      "buildingPL": "Escribe el nombre de la dirección del alquiler",
+      "rentalAddress": "Dirección del alquiler",
+      "rentalAddressPL": "Escribe el nombre de la dirección del alquiler",
       "room": "Piso/Habitación",
       "roomPL": "Escribe el número del piso/habitación",
       "rentAmount": "Alquiler mensual (en €)",

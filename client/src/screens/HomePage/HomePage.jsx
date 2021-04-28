@@ -21,7 +21,7 @@ const HomePage = ({ t }) => {
         subtitle={t("Home.subtitle")}
         text={t("Home.text")}
         imageSRC={EnsoImage}
-        imageAlt="Starcity brand image"
+        imageAlt="Enso brand image"
       />
       <Footer />
       <WhatsappBubble />

@@ -5,14 +5,14 @@ import hbs from "nodemailer-express-handlebars";
 // * Rimbo rent emails
 // Production / Development
 // const rimboEmail = "info@rimbo.rent";
-// const starcityEmail = "spain@starcity.com";
+// const ensoEmail = "spain@starcity.com";
 // const rimboEmail = "victor@rimbo.rent";
-// const starcityEmail = "victor@rimbo.rent";
+// const ensoEmail = "victor@rimbo.rent";
 const rimboEmail = "paniaguasanchezadrian@gmail.com";
-const starcityEmail = "paniaguasanchezadrian@gmail.com";
+const ensoEmail = "paniaguasanchezadrian@gmail.com";
 
 // ? =======>  SPANISH VERSION START ==============================>
-// ! F1SC Form => E1R (email to Rimbo) E1SC (email to Starcity)
+// ! F1SC Form => E1R (email to Rimbo) E1SC (email to Enso)
 const sendF1SCFormEmails = async (req, res) => {
   const {
     agencyName,
@@ -33,7 +33,7 @@ const sendF1SCFormEmails = async (req, res) => {
     rentStartDate,
     rentEndDate,
     tenancyID,
-    building,
+    rentalAddress,
     room,
   } = req.body;
 
@@ -81,9 +81,9 @@ const sendF1SCFormEmails = async (req, res) => {
     text: "",
     attachments: [
       {
-        filename: "starcity-logo.png",
-        path: "./views/images/starcity-logo.png",
-        cid: "starcitylogo",
+        filename: "enso-logo.png",
+        path: "./views/images/enso-logo.png",
+        cid: "ensologo",
       },
     ],
     template: "E1REmail",
@@ -106,21 +106,21 @@ const sendF1SCFormEmails = async (req, res) => {
       rentStartDate,
       rentEndDate,
       tenancyID,
-      building,
+      rentalAddress,
       room,
     },
   };
 
-  const StarcityEmail = {
+  const EnsoEmail = {
     from: "Rimbo info@rimbo.rent",
-    to: starcityEmail, // Starcity Email
+    to: ensoEmail, // Enso Email
     subject: "Registro de inquilino correcto",
     text: "",
     attachments: [
       {
-        filename: "starcity-logo.png",
-        path: "./views/images/starcity-logo.png",
-        cid: "starcitylogo",
+        filename: "enso-logo.png",
+        path: "./views/images/enso-logo.png",
+        cid: "ensologo",
       },
     ],
     template: "E1SCEmail",
@@ -143,7 +143,7 @@ const sendF1SCFormEmails = async (req, res) => {
       rentStartDate,
       rentEndDate,
       tenancyID,
-      building,
+      rentalAddress,
       room,
     },
   };
@@ -156,7 +156,7 @@ const sendF1SCFormEmails = async (req, res) => {
     }
   });
 
-  transporterE1SC.sendMail(StarcityEmail, (err, data) => {
+  transporterE1SC.sendMail(EnsoEmail, (err, data) => {
     if (err) {
       console.log("There is an error here...!" + err);
     } else {
@@ -174,7 +174,7 @@ const sendE1REmailEmails = async (req, res) => {
     tenantsEmail,
     randomID,
     agencyName,
-    building,
+    rentalAddress,
     room,
     tenancyID,
     rentStartDate,
@@ -208,9 +208,9 @@ const sendE1REmailEmails = async (req, res) => {
     text: "",
     attachments: [
       {
-        filename: "starcity-logo.png",
-        path: "./views/images/starcity-logo.png",
-        cid: "starcitylogo",
+        filename: "enso-logo.png",
+        path: "./views/images/enso-logo.png",
+        cid: "ensologo",
       },
     ],
     template: "E2TTEmail",
@@ -219,7 +219,7 @@ const sendE1REmailEmails = async (req, res) => {
       tenantsEmail,
       randomID,
       agencyName,
-      building,
+      rentalAddress,
       room,
       tenancyID,
       rentStartDate,
@@ -274,9 +274,9 @@ const sendNotificationRimbo = async (req, res) => {
     text: "",
     attachments: [
       {
-        filename: "starcity-logo.png",
-        path: "./views/images/starcity-logo.png",
-        cid: "starcitylogo",
+        filename: "enso-logo.png",
+        path: "./views/images/enso-logo.png",
+        cid: "ensologo",
       },
     ],
     template: "E2REmail",
@@ -300,13 +300,13 @@ const sendNotificationRimbo = async (req, res) => {
   res.status(200).json();
 };
 
-// ! F2SC Form => E3 (Rimbo, tenant, StarCity)
+// ! F2SC Form => E3 (Rimbo, tenant, Enso)
 const sendF2SCFormEmails = async (req, res) => {
   const {
     tenantsName,
     tenantsEmail,
     agencyName,
-    building,
+    rentalAddress,
     rentStartDate,
     rentEndDate,
   } = req.body;
@@ -369,9 +369,9 @@ const sendF2SCFormEmails = async (req, res) => {
     text: "",
     attachments: [
       {
-        filename: "starcity-logo.png",
-        path: "./views/images/starcity-logo.png",
-        cid: "starcitylogo",
+        filename: "enso-logo.png",
+        path: "./views/images/enso-logo.png",
+        cid: "ensologo",
       },
     ],
     template: "E3REmail",
@@ -379,7 +379,7 @@ const sendF2SCFormEmails = async (req, res) => {
       tenantsName,
       tenantsEmail,
       agencyName,
-      building,
+      rentalAddress,
       rentStartDate,
       rentEndDate,
     },
@@ -388,17 +388,17 @@ const sendF2SCFormEmails = async (req, res) => {
   const TenantEmail = {
     from: "Rimbo info@rimbo.rent",
     to: tenantsEmail, // Tenant Email
-    subject: "Bienvenido a Starcity & Rimbo",
+    subject: "Bienvenido a Enso & Rimbo",
     text: "",
     attachments: [
       {
-        filename: "starcity-logo.png",
-        path: "./views/images/starcity-logo.png",
-        cid: "starcitylogo",
+        filename: "enso-logo.png",
+        path: "./views/images/enso-logo.png",
+        cid: "ensologo",
       },
       {
-        filename: "Tenant_Guía_&_Reglas_generales_Starcity_ES.pdf",
-        path: "./views/images/Tenant_Guía_&_Reglas_generales_Starcity_ES.pdf",
+        filename: "Tenant_Guía_&_Reglas generales_ENSO_ES.pdf",
+        path: "./views/images/Tenant_Guía_&_Reglas generales_ENSO_ES.pdf",
       },
     ],
     template: "E3TTEmail",
@@ -406,22 +406,22 @@ const sendF2SCFormEmails = async (req, res) => {
       tenantsName,
       tenantsEmail,
       agencyName,
-      building,
+      rentalAddress,
       rentStartDate,
       rentEndDate,
     },
   };
   // Starcity Email
-  const SCEmail = {
+  const EnsoEmail = {
     from: "Rimbo info@rimbo.rent",
-    to: starcityEmail, // StarCity Email
+    to: ensoEmail, // Enso Email
     subject: `${tenantsName} Tarjeta registrada correctamente`,
     text: "",
     attachments: [
       {
-        filename: "starcity-logo.png",
-        path: "./views/images/starcity-logo.png",
-        cid: "starcitylogo",
+        filename: "enso-logo.png",
+        path: "./views/images/enso-logo.png",
+        cid: "ensologo",
       },
     ],
     template: "E3SCEmail",
@@ -429,7 +429,7 @@ const sendF2SCFormEmails = async (req, res) => {
       tenantsName,
       tenantsEmail,
       agencyName,
-      building,
+      rentalAddress,
       rentStartDate,
       rentEndDate,
     },
@@ -451,7 +451,7 @@ const sendF2SCFormEmails = async (req, res) => {
     }
   });
 
-  transporterE3SC.sendMail(SCEmail, (err, data) => {
+  transporterE3SC.sendMail(EnsoEmail, (err, data) => {
     if (err) {
       console.log("There is an error here...!" + err);
     } else {
@@ -485,7 +485,7 @@ const sendF1SCFormEmailsEn = async (req, res) => {
     rentStartDate,
     rentEndDate,
     tenancyID,
-    building,
+    rentalAddress,
     room,
   } = req.body;
 
@@ -533,9 +533,9 @@ const sendF1SCFormEmailsEn = async (req, res) => {
     text: "",
     attachments: [
       {
-        filename: "starcity-logo.png",
-        path: "./views/images/starcity-logo.png",
-        cid: "starcitylogo",
+        filename: "enso-logo.png",
+        path: "./views/images/enso-logo.png",
+        cid: "ensologo",
       },
     ],
     template: "E1REmailEn",
@@ -558,21 +558,21 @@ const sendF1SCFormEmailsEn = async (req, res) => {
       rentStartDate,
       rentEndDate,
       tenancyID,
-      building,
+      rentalAddress,
       room,
     },
   };
 
-  const StarcityEmail = {
+  const EnsoEmail = {
     from: "Rimbo info@rimbo.rent",
-    to: starcityEmail, // Starcity Email
+    to: ensoEmail, // Enso Email
     subject: "Tenant successfully registered",
     text: "",
     attachments: [
       {
-        filename: "starcity-logo.png",
-        path: "./views/images/starcity-logo.png",
-        cid: "starcitylogo",
+        filename: "enso-logo.png",
+        path: "./views/images/enso-logo.png",
+        cid: "ensologo",
       },
     ],
     template: "E1SCEmailEn",
@@ -595,7 +595,7 @@ const sendF1SCFormEmailsEn = async (req, res) => {
       rentStartDate,
       rentEndDate,
       tenancyID,
-      building,
+      rentalAddress,
       room,
     },
   };
@@ -608,7 +608,7 @@ const sendF1SCFormEmailsEn = async (req, res) => {
     }
   });
 
-  transporterE1SC.sendMail(StarcityEmail, (err, data) => {
+  transporterE1SC.sendMail(EnsoEmail, (err, data) => {
     if (err) {
       console.log("There is an error here...!" + err);
     } else {
@@ -626,7 +626,7 @@ const sendE1REmailEmailsEn = async (req, res) => {
     tenantsEmail,
     randomID,
     agencyName,
-    building,
+    rentalAddress,
     room,
     tenancyID,
     rentStartDate,
@@ -659,9 +659,9 @@ const sendE1REmailEmailsEn = async (req, res) => {
     text: "",
     attachments: [
       {
-        filename: "starcity-logo.png",
-        path: "./views/images/starcity-logo.png",
-        cid: "starcitylogo",
+        filename: "enso-logo.png",
+        path: "./views/images/enso-logo.png",
+        cid: "ensologo",
       },
     ],
     template: "E2TTEmailEn",
@@ -670,7 +670,7 @@ const sendE1REmailEmailsEn = async (req, res) => {
       tenantsEmail,
       randomID,
       agencyName,
-      building,
+      rentalAddress,
       room,
       tenancyID,
       rentStartDate,
@@ -725,9 +725,9 @@ const sendNotificationRimboEn = async (req, res) => {
     text: "",
     attachments: [
       {
-        filename: "starcity-logo.png",
-        path: "./views/images/starcity-logo.png",
-        cid: "starcitylogo",
+        filename: "enso-logo.png",
+        path: "./views/images/enso-logo.png",
+        cid: "ensologo",
       },
     ],
     template: "E2REmailEn",
@@ -751,13 +751,13 @@ const sendNotificationRimboEn = async (req, res) => {
   res.status(200).json();
 };
 
-// ! F2SC Form => E3 (Rimbo, tenant, StarCity)
+// ! F2SC Form => E3 (Rimbo, tenant, Enso)
 const sendF2SCFormEmailsEn = async (req, res) => {
   const {
     tenantsName,
     tenantsEmail,
     agencyName,
-    building,
+    rentalAddress,
     rentStartDate,
     rentEndDate,
   } = req.body;
@@ -820,9 +820,9 @@ const sendF2SCFormEmailsEn = async (req, res) => {
     text: "",
     attachments: [
       {
-        filename: "starcity-logo.png",
-        path: "./views/images/starcity-logo.png",
-        cid: "starcitylogo",
+        filename: "enso-logo.png",
+        path: "./views/images/enso-logo.png",
+        cid: "ensologo",
       },
     ],
     template: "E3REmailEn",
@@ -830,7 +830,7 @@ const sendF2SCFormEmailsEn = async (req, res) => {
       tenantsName,
       tenantsEmail,
       agencyName,
-      building,
+      rentalAddress,
       rentStartDate,
       rentEndDate,
     },
@@ -839,18 +839,17 @@ const sendF2SCFormEmailsEn = async (req, res) => {
   const TenantEmail = {
     from: "Rimbo info@rimbo.rent",
     to: tenantsEmail, // Tenant Email
-    subject: "Welcome to Starcity & Rimbo",
+    subject: "Welcome to Enso & Rimbo",
     text: "",
     attachments: [
       {
-        filename: "starcity-logo.png",
-        path: "./views/images/starcity-logo.png",
-        cid: "starcitylogo",
+        filename: "enso-logo.png",
+        path: "./views/images/enso-logo.png",
+        cid: "ensologo",
       },
       {
-        filename: "Tenant_General_Rules_&_Guidelines_Starcity_EN.pdf",
-        path:
-          "./views/images/Tenant_General_Rules_&_Guidelines_Starcity_EN.pdf",
+        filename: "Tenant_General_Rules_&_Guidelines_ENSO_EN.pdf",
+        path: "./views/images/Tenant_General_Rules_&_Guidelines_ENSO_EN.pdf",
       },
     ],
     template: "E3TTEmailEn",
@@ -858,22 +857,22 @@ const sendF2SCFormEmailsEn = async (req, res) => {
       tenantsName,
       tenantsEmail,
       agencyName,
-      building,
+      rentalAddress,
       rentStartDate,
       rentEndDate,
     },
   };
   // Starcity Email
-  const SCEmail = {
+  const EnsoEmail = {
     from: "Rimbo info@rimbo.rent",
-    to: starcityEmail, // StarCity Email
+    to: ensoEmail, // Enso Email
     subject: `${tenantsName} Card successfully registered`,
     text: "",
     attachments: [
       {
-        filename: "starcity-logo.png",
-        path: "./views/images/starcity-logo.png",
-        cid: "starcitylogo",
+        filename: "enso-logo.png",
+        path: "./views/images/enso-logo.png",
+        cid: "ensologo",
       },
     ],
     template: "E3SCEmailEn",
@@ -881,7 +880,7 @@ const sendF2SCFormEmailsEn = async (req, res) => {
       tenantsName,
       tenantsEmail,
       agencyName,
-      building,
+      rentalAddress,
       rentStartDate,
       rentEndDate,
     },
@@ -903,7 +902,7 @@ const sendF2SCFormEmailsEn = async (req, res) => {
     }
   });
 
-  transporterE3SC.sendMail(SCEmail, (err, data) => {
+  transporterE3SC.sendMail(EnsoEmail, (err, data) => {
     if (err) {
       console.log("There is an error here...!" + err);
     } else {

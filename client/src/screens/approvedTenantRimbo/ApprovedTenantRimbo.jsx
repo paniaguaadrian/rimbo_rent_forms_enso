@@ -62,7 +62,7 @@ const ApprovedTenantRimbo = ({ t }) => {
 
       const { tenantsName, tenantsEmail, randomID } = tenancyData.tenant;
       const { agencyName } = tenancyData.agent;
-      const { building, room } = tenancyData.property;
+      const { rentalAddress, room } = tenancyData.property;
       const { tenancyID, rentStartDate, rentEndDate } = tenancyData;
 
       if (tenancyData.tenant.isRimboAccepted === false) {
@@ -71,7 +71,7 @@ const ApprovedTenantRimbo = ({ t }) => {
           tenantsEmail,
           randomID,
           agencyName,
-          building,
+          rentalAddress,
           room,
           tenancyID,
           rentStartDate,
@@ -86,7 +86,7 @@ const ApprovedTenantRimbo = ({ t }) => {
       //       tenantsEmail,
       //       randomID,
       //       agencyName,
-      //       building,
+      //       rentalAddress,
       //       room,
       //       tenancyID,
       //       rentStartDate,
@@ -98,7 +98,7 @@ const ApprovedTenantRimbo = ({ t }) => {
       //       tenantsEmail,
       //       randomID,
       //       agencyName,
-      //       building,
+      //       rentalAddress,
       //       room,
       //       tenancyID,
       //       rentStartDate,
