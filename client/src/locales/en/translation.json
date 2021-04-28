@@ -4,17 +4,17 @@
   "submitButton": "Send",
   "authorize": "Send data",
   "Home": {
-    "header": "Starcity & Rimbo - The new way of renting",
-    "title": "Welcome to the union between Starcity and Rimbo",
+    "header": "Enso & Rimbo - The new way of renting",
+    "title": "Welcome to the union between Enso and Rimbo",
     "subtitle": "Enjoy the new way of renting",
     "text": "In case you have any questions, please get in touch with us"
   },
   "F1SC": {
-    "helmet": "New tenancy - Starcity & Rimbo - The new way of rent",
+    "helmet": "New tenancy - Enso & Rimbo - The new way of rent",
     "header": {
-      "title": "List your member",
+      "title": "List your tenant",
       "subtitleOne": "Fill out the fields.",
-      "subtitleTwo": "The member will receive an email to register the debit card",
+      "subtitleTwo": "The tenant will receive an email to register the debit card",
       "subtitleThree": "Receive a response via email."
     },
     "stepZero": {
@@ -36,16 +36,16 @@
       "linkCookies": "https://rimbo.rent/en/cookies-policy/"
     },
     "stepOne": {
-      "tenantName": "Member's full name",
-      "tenantEmail": "Member's email",
-      "tenantPhone": "Member's phone number",
+      "tenantName": "Tenant's full name",
+      "tenantEmail": "Tenant's email",
+      "tenantPhone": "Tenant's phone number",
       "tenantNamePL": "Enter the name and surname",
       "tenantEmailPL": "Enter the email address",
       "tenantPhonePL": "Enter the phone number"
     },
     "stepTwo": {
       "service": "Choose service",
-      "servicePL": "Select a Starcity service",
+      "servicePL": "Select a Enso service",
       "rentDuration": "Duration rental agreement (years)",
       "rentDurationPL": "Enter duration",
       "completeRentalAddress": "Address of the property",
@@ -109,10 +109,10 @@
     "subtitle": "We will send an email to the tenant to register the debit card with us"
   },
   "F2TT": {
-    "header": "New member - Starcity & Rimbo - The new way of rent",
+    "header": "New tenant - Enso & Rimbo - The new way of rent",
     "titleOne": "Rent this property ",
     "titleTwo": "deposit-free",
-    "leftTextOne": "We are excited about your upcoming move with Starcity and we want to make it as easy and cost-effective for you as possible!",
+    "leftTextOne": "We are excited about your upcoming move with Enso and we want to make it as easy and cost-effective for you as possible!",
     "leftTextTwo": "This is why this community is deposit-free.",
     "leftTextThree": "No need to pay any deposit upfront. Just register with your debit card details.",
     "name": "Full name: ",
@@ -128,12 +128,12 @@
     "checkBoxFive": "of Rimbo Rent"
   },
   "cardsuccess": {
-    "title": "You are already part of StarCity!",
+    "title": "You are already part of Enso!",
     "textOne": "Awesome, we have received your details!",
     "textTwo": "We will get in touch with you shortly to complete the process."
   },
   "404Page": {
-    "header": "404 error page - Starcity & Rimbo",
+    "header": "404 error page - Enso & Rimbo",
     "title": "Error 404 - The page you are looking for doesn't exist 😔",
     "subtitle": "Please, reload the latest link you have received, or get in touch with us:",
     "paragraphEmail": "info@rimbo.rent",

@@ -4,17 +4,17 @@
   "submitButton": "Enviar",
   "authorize": "Enviar datos",
   "Home": {
-    "header": "Starcity & Rimbo - The new way of renting",
-    "title": "Bienvenid@ a la unión entre Starcity y Rimbo",
+    "header": "Enso & Rimbo - The new way of renting",
+    "title": "Bienvenid@ a la unión entre Enso y Rimbo",
     "subtitle": "Disfruta de la nueva forma de alquiler",
     "text": "Cualquier duda que tengas, ponte en contacto con nosotros"
   },
   "F1SC": {
-    "helmet": "Nuevo alquiler - Starcity & Rimbo - The new way of rent",
+    "helmet": "Nuevo alquiler - Enso & Rimbo - The new way of rent",
     "header": {
-      "title": "Registra a tu residente",
+      "title": "Registra a tu inquilino",
       "subtitleOne": "Completa los campos.",
-      "subtitleTwo": "El residente recibirá un email para registrar su tarjeta de débito",
+      "subtitleTwo": "El inquilino recibirá un email para registrar su tarjeta de débito",
       "subtitleThree": "Recibirás una respuesta por correo electrónico."
     },
     "stepZero": {
@@ -36,9 +36,9 @@
       "linkCookies": "https://rimbo.rent/politica-cookies/"
     },
     "stepOne": {
-      "tenantName": "Nombre completo del residente",
-      "tenantEmail": "Correo electrónico del residente",
-      "tenantPhone": "Número de teléfono del residente",
+      "tenantName": "Nombre completo del inquilino",
+      "tenantEmail": "Correo electrónico del inquilino",
+      "tenantPhone": "Número de teléfono del inquilino",
       "tenantNamePL": "Escribe el nombre completo",
       "tenantEmailPL": "Escribe el correo electrónico",
       "tenantPhonePL": "Escribe el número de teléfono"
@@ -74,7 +74,7 @@
       "jobTypeSix": "Soy estudiante",
       "jobTypeSeven": "Otro",
       "tenantsAddress": "Dirección actual",
-      "tenantsAddressPL": "Escribe la dirección actual del residente",
+      "tenantsAddressPL": "Escribe la dirección actual del inquilino",
       "tenantsZipCode": "Código postal actual",
       "tenantsZipCodePL": "XXXXX",
       "documentType": "Tipo de documento",
@@ -99,10 +99,10 @@
     "subtitle": "We will send an email to the tenant to register the debit card with us"
   },
   "F2TT": {
-    "header": "Nuevo residente - Starcity & Rimbo - The new way of rent",
+    "header": "Nuevo inquilino - Enso & Rimbo - The new way of rent",
     "titleOne": "¡Alquila este apartamento ",
     "titleTwo": "sin pagar fianza",
-    "leftTextOne": "Estamos muy ilusionados de que hayas decidido formar parte de Starcity y somos conscientes de que para ti es muy importante mudarte de una manera fácil, ágil y asequible.",
+    "leftTextOne": "Estamos muy ilusionados de que hayas decidido formar parte de Enso y somos conscientes de que para ti es muy importante mudarte de una manera fácil, ágil y asequible.",
     "leftTextTwo": "De esta manera hemos decidido que en esta comunidad no será necesario un depósito para entrar a vivir.",
     "leftTextThree": "Con nosotros no tienes que adelantar la fianza. Solo tienes que registrar tu tarjeta de débito.",
     "name": "Nombre Completo: ",
@@ -118,12 +118,12 @@
     "checkBoxFive": "de Rimbo Rent"
   },
   "cardsuccess": {
-    "title": "¡Ya eres parte de Starcity!",
+    "title": "¡Ya eres parte de Enso!",
     "textOne": "Genial, ¡hemos recibido tus detalles!",
     "textTwo": " Nos pondremos en contacto contigo en breve para completar el proceso."
   },
   "404Page": {
-    "header": "404 error page - Starcity & Rimbo",
+    "header": "404 error page - Enso & Rimbo",
     "title": "404 - La página a la que intentas acceder no existe 😔",
     "subtitle": "Por favor vuelve a cargar el último enlace que has recibido o ponte en contacto con nosotros a:",
     "paragraphEmail": "info@rimbo.rent",
