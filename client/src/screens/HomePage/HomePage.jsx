@@ -9,7 +9,7 @@ import CustomHelmet from "../../components/Helmet/CustomHelmet";
 import { withNamespaces } from "react-i18next";
 
 // Images
-import StarcityImage from "../../images/starcity-image.png";
+import EnsoImage from "../../images/enso-coliving-success.jpg";
 
 const HomePage = ({ t }) => {
   return (
@@ -20,7 +20,7 @@ const HomePage = ({ t }) => {
         title={t("Home.title")}
         subtitle={t("Home.subtitle")}
         text={t("Home.text")}
-        imageSRC={StarcityImage}
+        imageSRC={EnsoImage}
         imageAlt="Starcity brand image"
       />
       <Footer />
