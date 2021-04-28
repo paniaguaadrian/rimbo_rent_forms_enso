@@ -5,7 +5,7 @@ import hbs from "nodemailer-express-handlebars";
 // * Rimbo rent emails
 // Production / Development
 // const rimboEmail = "info@rimbo.rent";
-// const ensoEmail = "spain@starcity.com";
+// const ensoEmail = "hello@ensospaces.com";
 // const rimboEmail = "victor@rimbo.rent";
 // const ensoEmail = "victor@rimbo.rent";
 const rimboEmail = "paniaguasanchezadrian@gmail.com";

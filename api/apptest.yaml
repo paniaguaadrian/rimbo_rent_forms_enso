@@ -1,0 +1,9 @@
+runtime: nodejs12
+service: ensobackend
+# [START variables]
+env_variables:
+  NODE_ENV: "production"
+  SENDGRID_API: "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"
+  PUBLISHEABLE_KEY: "pk_test_r37z8vhuXVT8y17zrNPMRQ7d00XhEDZvQO"
+  SECRET_KEY: "sk_test_CJttBST0eOnCjnXsk4760v6C00D3lCA4nM"
+# [END variables]
