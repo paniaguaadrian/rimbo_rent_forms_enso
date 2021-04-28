@@ -18,8 +18,8 @@
       "subtitleThree": "Recibirás una respuesta por correo electrónico."
     },
     "stepZero": {
-      "building": "Comunidad",
-      "buildingPL": "Escribe el nombre de la comunidad",
+      "building": "Dirección del alquiler",
+      "buildingPL": "Escribe el nombre de la dirección del alquiler",
       "room": "Piso/Habitación",
       "roomPL": "Escribe el número del piso/habitación",
       "rentAmount": "Alquiler mensual (en €)",
@@ -100,11 +100,11 @@
   },
   "F2TT": {
     "header": "Nuevo inquilino - Enso & Rimbo - The new way of rent",
-    "titleOne": "¡Alquila este apartamento ",
+    "titleOne": "¡Alquila esta habitación ",
     "titleTwo": "sin pagar fianza",
-    "leftTextOne": "Estamos muy ilusionados de que hayas decidido formar parte de Enso y somos conscientes de que para ti es muy importante mudarte de una manera fácil, ágil y asequible.",
-    "leftTextTwo": "De esta manera hemos decidido que en esta comunidad no será necesario un depósito para entrar a vivir.",
-    "leftTextThree": "Con nosotros no tienes que adelantar la fianza. Solo tienes que registrar tu tarjeta de débito.",
+    "leftTextOne": "Desde Enso estamos muy contentos de que quieras formar parte de esta gran familia, y como buena familia, nos gusta cuidar de los nuestros.",
+    "leftTextTwo": "Alquiler sin fianza, para que te gastes el dinero en lo que tú quieras.",
+    "leftTextThree": "Con Enso puedes mudarte de manera rápida, fácil y asequible. Solo tendrás que rellenar este pequeño formulario con tus datos... Y LISTO",
     "name": "Nombre Completo: ",
     "email": "Email: ",
     "phone": "Teléfono: ",

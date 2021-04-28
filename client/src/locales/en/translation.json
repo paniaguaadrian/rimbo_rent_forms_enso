@@ -18,8 +18,8 @@
       "subtitleThree": "Receive a response via email."
     },
     "stepZero": {
-      "building": "Community",
-      "buildingPL": "Write the community name",
+      "building": "Rental Address",
+      "buildingPL": "Write the rental address",
       "room": "Apartment/Room",
       "roomPL": "Write the apartment/room number",
       "rentAmount": "Monthly rent (in €)",
@@ -110,11 +110,11 @@
   },
   "F2TT": {
     "header": "New tenant - Enso & Rimbo - The new way of rent",
-    "titleOne": "Rent this property ",
-    "titleTwo": "deposit-free",
-    "leftTextOne": "We are excited about your upcoming move with Enso and we want to make it as easy and cost-effective for you as possible!",
-    "leftTextTwo": "This is why this community is deposit-free.",
-    "leftTextThree": "No need to pay any deposit upfront. Just register with your debit card details.",
+    "titleOne": "Rent this room ",
+    "titleTwo": "without paying a deposit",
+    "leftTextOne": "Here at enso we are glad you want to form part of our big family! And as in each good family - we like to take care of our own people.",
+    "leftTextTwo": "We offer you to rent this room without paying a cash deposit, so you can spend your money on whatever you feel like!",
+    "leftTextThree": "With enso moving is easy, quick and affordable. All you need to do is fill this short form out… and DONE!",
     "name": "Full name: ",
     "email": "Email: ",
     "phone": "Phone: ",
