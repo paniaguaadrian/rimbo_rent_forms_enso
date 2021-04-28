@@ -2,7 +2,7 @@
 import React from "react";
 
 // Images
-import StarCityLogo from "../../images/starcity-logo.png";
+import EnsoLogo from "../../images/enso-logo.png";
 import SpanishLogo from "../../images/spanish-language.png";
 import EnglishLogo from "../../images/english-language.png";
 
@@ -21,11 +21,11 @@ const NavBar = () => {
   return (
     <div className={styles.NavBarContainer}>
       <div className={styles.LogoContainer}>
-        <img
-          className={styles.LogoImage}
-          src={StarCityLogo}
-          alt="Starcity Logo"
-        />
+        <img className={styles.LogoImage} src={EnsoLogo} alt="Enso Logo" />
+        <div>
+          <h2>enso</h2>
+          <h3>co-living</h3>
+        </div>
       </div>
 
       <div className={styles.ToggleButtonContainer}>
