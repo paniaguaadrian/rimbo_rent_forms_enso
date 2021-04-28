@@ -15,12 +15,40 @@
     justify-content: space-between;
   }
 
+  .NavBarLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h2 {
+      @include xl {
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin-right: 0.5rem;
+      }
+      font-size: 1.9rem;
+      font-weight: 700;
+      margin-right: 0.5rem;
+    }
+
+    h3 {
+      @include xl {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+
   .LogoImage {
-    height: 2.8rem !important;
+    height: 3.2rem !important;
     margin-left: 2rem;
+    margin-right: 1rem;
     @include xl {
-      height: 2rem !important;
+      height: 2.7rem !important;
       margin-left: 2rem;
+      margin-right: 1rem;
     }
   }
 
