@@ -229,7 +229,7 @@ a{
 }
 .hero .text h2{
 	color: #000;
-	font-size: 30px;
+	font-size: 20px;
 	margin-bottom: 0;
 	font-weight: 300;
 }
@@ -254,7 +254,7 @@ a{
 } */
 .heading-section h2{
 	color: #6aa3a1;
-	font-size: 28px;
+	font-size: 20px;
 	margin-top: 0;
 	line-height: 1.4;
 	font-weight: 400;
@@ -411,7 +411,7 @@ text-decoration: none;
 		          <tr>
 		            <td class="bg_white email-section">
 		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h3>¡Hay un inquilino que está listo para mudarse sin depósito!</h3>
+		              	<h2>¡Hay un inquilino que está listo para mudarse sin depósito!</h2>
 
 		            	</div>
 		          </tr><!-- end: tr -->
@@ -420,10 +420,8 @@ text-decoration: none;
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 		          <tr>
 		            <td class="bg_white email-section">
-		            	<div class="heading-section" style="text-align: center; padding: 0 30px; color: #6aa3a1;">
+		            	<div class="heading-section" style="text-align: center; padding: 0 10px; color: #6aa3a1;">
 		              	<h3>El siguiente inquilino se ha registrado correctamente en nuestro sistema:</h3>
-						 
-		              	
 		            	</div>
 		          </tr><!-- end: tr -->
 					
@@ -432,12 +430,10 @@ text-decoration: none;
 			<table>
 					<tr>
 						<td>
-							<div class="text" style="padding: 0em 3em; text-align: left; color: black;">
-								<ul>
-                                    <li>Nombre Completo: {{tenantsName}}</li>
-                                    <li>Correo Electrónico: {{tenantsEmail}}</li>
-									<li>TNúmero de teléfono: {{tenantsPhone}}</li>
-                                </ul>
+							<div class="text" style="padding: 0em 1em; text-align: left; color: black;">
+								<h3>- Nombre Completo: {{tenantsName}}</h3>
+								<h3>- Correo Electrónico: {{tenantsEmail}}</h3>
+								<h3>- Número de teléfono: {{tenantsPhone}}</h3>
 							</div>
 						</td>
 					</tr>
@@ -447,28 +443,24 @@ text-decoration: none;
 				<table>
 					<tr>
 						<td>
-							<div class="text" style="padding: 0em 3em; text-align: left; color: black;">
-								<h3>¡Podéis continuar con la firma del contrato de alquiler con el inquilino!</h3>	
-								<h3>Una vez que todo esté listo, por favor, compartid con nosotros en Google Drive:</h3>
-								<ul>
-									<li>
-										Los detalles del inquilino y del alquiler en el Tenancy Tracker
-									</li>
-									<li>
-										El Anexo al contrato de alquiler de Rimbo
-									</li>
-								</ul>
+							<div class="text" style="padding: 0em 3rem; text-align: center; color: #6aa3a1;">
+								<br/>
+								<br/>
+								<h2>¡Podéis continuar con la firma del contrato de alquiler con el inquilino!</h2>
+								<br/>
+								<br/>
 							</div>
 						</td>
 					</tr>
 				</table>
-
 				<table>
 					<tr>
 						<td>
 							<div class="text" style="padding: 1em 3em; text-align: left;">
-								
-								<h3>¡Estamos emocionados de que {{tenantsName}} se vaya a unir a la familia de Enso/Rimbo!</h3>
+								<h3>Una vez que todo esté listo, por favor, compartid con nosotros en Google Drive el anexo al contrato de alquiler de Rimbo.</h3>
+								<br/>
+								<h3>¡Estamos emocionados de que <b>{{tenantsName}}</b> se vaya a unir a la familia de Enso/Rimbo!</h3>
+								<br/>
 								<h3>En caso que necesitéis cualquier tipo de ayuda o soporte, estamos aquí para vosotros!</h3>
 							</div>
 						</td>

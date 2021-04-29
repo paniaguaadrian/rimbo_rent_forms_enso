@@ -305,6 +305,7 @@ const sendF2SCFormEmails = async (req, res) => {
   const {
     tenantsName,
     tenantsEmail,
+    tenantsPhone,
     agencyName,
     rentalAddress,
     rentStartDate,
@@ -428,6 +429,7 @@ const sendF2SCFormEmails = async (req, res) => {
     context: {
       tenantsName,
       tenantsEmail,
+      tenantsPhone,
       agencyName,
       rentalAddress,
       rentStartDate,
@@ -756,6 +758,7 @@ const sendF2SCFormEmailsEn = async (req, res) => {
   const {
     tenantsName,
     tenantsEmail,
+    tenantsPhone,
     agencyName,
     rentalAddress,
     rentStartDate,
@@ -879,6 +882,7 @@ const sendF2SCFormEmailsEn = async (req, res) => {
     context: {
       tenantsName,
       tenantsEmail,
+      tenantsPhone,
       agencyName,
       rentalAddress,
       rentStartDate,
