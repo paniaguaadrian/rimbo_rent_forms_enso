@@ -397,8 +397,8 @@ const sendF2SCFormEmails = async (req, res) => {
         cid: "ensologo",
       },
       {
-        filename: "Tenant_Guía_&_Reglas generales_ENSO_ES.pdf",
-        path: "./views/images/Tenant_Guía_&_Reglas generales_ENSO_ES.pdf",
+        filename: "Tenant_Guía_&_Reglas_generales_ENSO_ES.pdf",
+        path: "./views/images/Tenant_Guía_&_Reglas_generales_ENSO_ES.pdf",
       },
     ],
     template: "E3TTEmail",
