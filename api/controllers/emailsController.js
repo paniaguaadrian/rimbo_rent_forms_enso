@@ -6,10 +6,10 @@ import hbs from "nodemailer-express-handlebars";
 // Production / Development
 // const rimboEmail = "info@rimbo.rent";
 // const ensoEmail = "hello@ensospaces.com";
-// const rimboEmail = "victor@rimbo.rent";
-// const ensoEmail = "victor@rimbo.rent";
-const rimboEmail = "paniaguasanchezadrian@gmail.com";
-const ensoEmail = "paniaguasanchezadrian@gmail.com";
+const rimboEmail = "victor@rimbo.rent";
+const ensoEmail = "victor@rimbo.rent";
+// const rimboEmail = "paniaguasanchezadrian@gmail.com";
+// const ensoEmail = "paniaguasanchezadrian@gmail.com";
 
 // ? =======>  SPANISH VERSION START ==============================>
 // ! F1SC Form => E1R (email to Rimbo) E1SC (email to Enso)
@@ -75,7 +75,7 @@ const sendF1SCFormEmails = async (req, res) => {
   transporterE1SC.use("compile", hbs(optionsE1SC));
 
   const RimboEmail = {
-    from: "Rimbo info@rimbo.rent",
+    from: "Enso | Rimbo info@rimbo.rent",
     to: rimboEmail, // Rimbo Email
     subject: `Nuevo inquilino registrado por ${agencyName}`,
     text: "",
@@ -112,7 +112,7 @@ const sendF1SCFormEmails = async (req, res) => {
   };
 
   const EnsoEmail = {
-    from: "Rimbo info@rimbo.rent",
+    from: "Enso | Rimbo info@rimbo.rent",
     to: ensoEmail, // Enso Email
     subject: "Registro de inquilino correcto",
     text: "",
@@ -201,7 +201,7 @@ const sendE1REmailEmails = async (req, res) => {
   transporterE2TT.use("compile", hbs(optionsE2TT));
 
   const TenantEmail = {
-    from: "Rimbo info@rimbo.rent",
+    from: "Enso | Rimbo info@rimbo.rent",
     to: tenantsEmail, // tenants Email
     subject:
       "Bienvenido a la revolución de los depósitos - Welcome to the deposit revolution",
@@ -268,7 +268,7 @@ const sendNotificationRimbo = async (req, res) => {
   transporterE2R.use("compile", hbs(optionsE2R));
 
   const RimboEmail = {
-    from: "Rimbo info@rimbo.rent",
+    from: "Enso | Rimbo info@rimbo.rent",
     to: rimboEmail, // Rimbo Email
     subject: `${agencyName}-${tenantsName}-Registration Start`,
     text: "",
@@ -363,7 +363,7 @@ const sendF2SCFormEmails = async (req, res) => {
 
   // Rimbo Email
   const RimboEmail = {
-    from: "Rimbo info@rimbo.rent",
+    from: "Enso | Rimbo info@rimbo.rent",
     to: rimboEmail, // Rimbo Email
     subject: `${tenantsName} Tarjeta registrada correctamente`,
     text: "",
@@ -386,9 +386,9 @@ const sendF2SCFormEmails = async (req, res) => {
   };
   // Tenant Email
   const TenantEmail = {
-    from: "Rimbo info@rimbo.rent",
+    from: "Enso | Rimbo info@rimbo.rent",
     to: tenantsEmail, // Tenant Email
-    subject: "Bienvenido a Enso & Rimbo",
+    subject: "Enso & Rimbo - Registro completado con éxito!",
     text: "",
     attachments: [
       {
@@ -413,9 +413,9 @@ const sendF2SCFormEmails = async (req, res) => {
   };
   // Starcity Email
   const EnsoEmail = {
-    from: "Rimbo info@rimbo.rent",
+    from: "Enso | Rimbo info@rimbo.rent",
     to: ensoEmail, // Enso Email
-    subject: `${tenantsName} Tarjeta registrada correctamente`,
+    subject: `Rimbo - Nuevo Inquilino Confirmado`,
     text: "",
     attachments: [
       {
@@ -527,7 +527,7 @@ const sendF1SCFormEmailsEn = async (req, res) => {
   transporterE1SC.use("compile", hbs(optionsE1SC));
 
   const RimboEmail = {
-    from: "Rimbo info@rimbo.rent",
+    from: "Enso | Rimbo info@rimbo.rent",
     to: rimboEmail, // Rimbo Email
     subject: `New Tenant Listing by ${agencyName}`,
     text: "",
@@ -564,7 +564,7 @@ const sendF1SCFormEmailsEn = async (req, res) => {
   };
 
   const EnsoEmail = {
-    from: "Rimbo info@rimbo.rent",
+    from: "Enso | Rimbo info@rimbo.rent",
     to: ensoEmail, // Enso Email
     subject: "Tenant successfully registered",
     text: "",
@@ -653,7 +653,7 @@ const sendE1REmailEmailsEn = async (req, res) => {
   transporterE2TT.use("compile", hbs(optionsE2TT));
 
   const TenantEmail = {
-    from: "Rimbo info@rimbo.rent",
+    from: "Enso | Rimbo info@rimbo.rent",
     to: tenantsEmail, // Rimbo Email
     subject: "Welcome to the deposit revolution",
     text: "",
@@ -719,7 +719,7 @@ const sendNotificationRimboEn = async (req, res) => {
   transporterE2R.use("compile", hbs(optionsE2R));
 
   const RimboEmail = {
-    from: "Rimbo info@rimbo.rent",
+    from: "Enso | Rimbo info@rimbo.rent",
     to: rimboEmail, // Rimbo Email
     subject: `${agencyName}-${tenantsName}-Registration Start`,
     text: "",
@@ -814,7 +814,7 @@ const sendF2SCFormEmailsEn = async (req, res) => {
 
   // Rimbo Email
   const RimboEmail = {
-    from: "Rimbo info@rimbo.rent",
+    from: "Enso | Rimbo info@rimbo.rent",
     to: rimboEmail, // Rimbo Email
     subject: `${tenantsName} Card successfully registered`,
     text: "",
@@ -837,9 +837,9 @@ const sendF2SCFormEmailsEn = async (req, res) => {
   };
   // Tenant Email
   const TenantEmail = {
-    from: "Rimbo info@rimbo.rent",
+    from: "Enso | Rimbo info@rimbo.rent",
     to: tenantsEmail, // Tenant Email
-    subject: "Welcome to Enso & Rimbo",
+    subject: "Enso & Rimbo - Registration completed successfully!",
     text: "",
     attachments: [
       {
@@ -864,9 +864,9 @@ const sendF2SCFormEmailsEn = async (req, res) => {
   };
   // Starcity Email
   const EnsoEmail = {
-    from: "Rimbo info@rimbo.rent",
+    from: "Enso | Rimbo info@rimbo.rent",
     to: ensoEmail, // Enso Email
-    subject: `${tenantsName} Card successfully registered`,
+    subject: `Rimbo - Nuevo Inquilino Confirmado`,
     text: "",
     attachments: [
       {

@@ -17,7 +17,7 @@ const FormSteps = (step, setStep, tenancy, setTenancy) => [
     ),
   },
   {
-    title: "Tenants's contact information",
+    title: "Tenant's contact information",
     titleEs: "Información de contacto del inquilino",
     content: (
       <TenantContactDetails
@@ -29,7 +29,7 @@ const FormSteps = (step, setStep, tenancy, setTenancy) => [
     ),
   },
   {
-    title: "Tenants's personal information",
+    title: "Tenant's personal information",
     titleEs: "Información personal del inquilino",
     content: (
       <TenantPersonalDetails

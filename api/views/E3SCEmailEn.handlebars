@@ -254,7 +254,7 @@ a{
 } */
 .heading-section h2{
 	color: #6aa3a1;
-	font-size: 24px;
+	font-size: 28px;
 	margin-top: 0;
 	line-height: 1.4;
 	font-weight: 400;
@@ -304,7 +304,7 @@ a{
 }
 
 .logo-image{
-	width: 5rem;
+	width: 7rem;
 }
 
 .btn-rimbo{
@@ -397,8 +397,8 @@ text-decoration: none;
             	<tr>
             		<td>
             			<div class="text" style="padding: 0 3em; text-align: center;">
-							<h3>Good news {{agencyName}}!</h3>			
-            				
+							<h3>Hola equipo de {{agencyName}},</h3>
+							<h4>¡Saludos y buenas noticias de parte de Rimbo!</h4>
             			</div>
             		</td>
             	</tr>
@@ -411,33 +411,63 @@ text-decoration: none;
 		          <tr>
 		            <td class="bg_white email-section">
 		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h3>The member {{tenantsName}} has registered with Rimbo successfully for the room <b>{{rentalAddress}}</b>.</h3>
+		              	<h3>¡Hay un inquilino que está listo para mudarse sin depósito!</h3>
 
 		            	</div>
 		          </tr><!-- end: tr -->
 					<td valign="middle" class="hero hero-2 bg_white" style="padding: 1em 0;">
 
-            {{!-- <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 		          <tr>
 		            <td class="bg_white email-section">
 		            	<div class="heading-section" style="text-align: center; padding: 0 30px; color: #6aa3a1;">
-		              	<h2>Solo falta un paso importante:</h2>
+		              	<h2>El siguiente inquilino se ha registrado correctamente en nuestro sistema:</h2>
 						 
 		              	
 		            	</div>
 		          </tr><!-- end: tr -->
 					
-			</table> --}}
+			</table>
 
-			
-
-
+			<table>
+					<tr>
+						<td>
+							<div class="text" style="padding: 0em 3em; text-align: left; color: black;">
+								<ul>
+                                    <li>Nombre Completo: {{tenantsName}}</li>
+                                    <li>Correo Electrónico: {{tenantsEmail}}</li>
+									<li>TNúmero de teléfono: {{tenantsPhone}}</li>
+                                </ul>
+							</div>
+						</td>
+					</tr>
+				</table>
             <table>
 					<tr>
 						<td>
 							<div class="text" style="padding: 1em 3em; text-align: left;">
 								
-								<h3>Please, feel free to continue with the signature of the rental agreement.</h3>							
+								<h3>¡Podéis continuar con la firma del contrato de alquiler con el inquilino!</h3>	
+								<h4>Una vez que todo esté listo, por favor, compartid con nosotros en Google Drive:</h4>
+								<ul>
+									<li>
+										Los detalles del inquilino y del alquiler en el Tenancy Tracker
+									</li>
+									<li>
+										El Anexo al contrato de alquiler de Rimbo
+									</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+			</table>
+
+				<table>
+					<tr>
+						<td>
+							<div class="text" style="padding: 1em 3em; text-align: left;">
+								
+								<h3>¡Estamos emocionados de que ${tenantsName} se vaya a unir a la familia de Enso/Rimbo!</h3>
 							</div>
 						</td>
 					</tr>
@@ -447,7 +477,7 @@ text-decoration: none;
 		          <tr>
 		            <td class="bg_white email-section">
 		            	<div class="heading-section" style="text-align: center; padding: 0 30px; color: #6aa3a1;">
-		              	<h2>We are always happy to collaborate with you!</h2>
+		              	<h2>En caso que necesitéis cualquier tipo de ayuda o soporte, estamos aquí para vosotros!</h2>
 						 
 		              	
 		            	</div>
