@@ -4,10 +4,12 @@ import hbs from "nodemailer-express-handlebars";
 
 // * Rimbo rent emails
 // Production / Development
-// const rimboEmail = "info@rimbo.rent";
-// const ensoEmail = "hello@ensospaces.com";
-const rimboEmail = "victor@rimbo.rent";
-const ensoEmail = "victor@rimbo.rent";
+const rimboEmail = "info@rimbo.rent";
+const ensoEmail = "hello@ensospaces.com";
+// const rimboEmail = "victor@rimbo.rent";
+// const ensoEmail = "victor@rimbo.rent";
+// const rimboEmail = "gloriya@rimbo.rent";
+// const ensoEmail = "gloriya@rimbo.rent";
 // const rimboEmail = "paniaguasanchezadrian@gmail.com";
 // const ensoEmail = "paniaguasanchezadrian@gmail.com";
 
@@ -240,13 +242,8 @@ const sendE1REmailEmails = async (req, res) => {
 
 // ! F2SC Form => E2R (email to Rimbo that informs tenant is on F2SC)
 const sendNotificationRimbo = async (req, res) => {
-  const {
-    tenantsName,
-    tenantsEmail,
-    tenantsPhone,
-    agencyName,
-    randomID,
-  } = req.body;
+  const { tenantsName, tenantsEmail, tenantsPhone, agencyName, randomID } =
+    req.body;
 
   const transporterE2R = nodemailer.createTransport(
     sgTransport({
@@ -693,13 +690,8 @@ const sendE1REmailEmailsEn = async (req, res) => {
 
 // ! F2SC Form => E2R (email to Rimbo that informs tenant is on F2SC)
 const sendNotificationRimboEn = async (req, res) => {
-  const {
-    tenantsName,
-    tenantsEmail,
-    tenantsPhone,
-    agencyName,
-    randomID,
-  } = req.body;
+  const { tenantsName, tenantsEmail, tenantsPhone, agencyName, randomID } =
+    req.body;
 
   const transporterE2R = nodemailer.createTransport(
     sgTransport({

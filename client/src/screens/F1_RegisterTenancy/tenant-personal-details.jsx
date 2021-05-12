@@ -329,6 +329,24 @@ const TenantPersonalDetails = ({ step, setStep, tenancy, setTenancy, t }) => {
                   >
                     {t("F1SC.stepThree.jobTypeSeven")}
                   </option>
+
+                  <option
+                    name="jobType"
+                    value={t("F1SC.stepThree.jobTypeEight")}
+                  >
+                    {t("F1SC.stepThree.jobTypeEight")}
+                  </option>
+
+                  <option
+                    name="jobType"
+                    value={t("F1SC.stepThree.jobTypeNine")}
+                  >
+                    {t("F1SC.stepThree.jobTypeNine")}
+                  </option>
+
+                  <option name="jobType" value={t("F1SC.stepThree.jobTypeTen")}>
+                    {t("F1SC.stepThree.jobTypeTen")}
+                  </option>
                 </select>
               </div>
             </div>
