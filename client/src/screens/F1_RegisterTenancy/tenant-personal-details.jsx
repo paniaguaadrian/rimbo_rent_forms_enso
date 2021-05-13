@@ -372,6 +372,7 @@ const TenantPersonalDetails = ({ step, setStep, tenancy, setTenancy, t }) => {
                       label={t("F1SC.stepThree.tenantsAddress")}
                       placeholder={t("F1SC.stepThree.tenantsAddressPL")}
                       required
+                      error={errors.tenantsAddress}
                     />
                     <div className={styles.GoogleSuggestionContainer}>
                       {/* display sugestions */}
@@ -411,6 +412,7 @@ const TenantPersonalDetails = ({ step, setStep, tenancy, setTenancy, t }) => {
                 placeholder={t("F1SC.stepThree.tenantsZipCodePL")}
                 onChange={setTenantsZipCode}
                 disabled
+                required
               />
             </div>
           </div>
