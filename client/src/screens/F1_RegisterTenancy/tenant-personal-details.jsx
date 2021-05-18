@@ -495,7 +495,6 @@ const TenantPersonalDetails = ({ step, setStep, tenancy, setTenancy, t }) => {
                 name="DB"
                 label={t("F1SC.stepThree.DB")}
                 onChange={changeHandler}
-                required
               />
             </div>
           </div>
