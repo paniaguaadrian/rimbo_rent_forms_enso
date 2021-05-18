@@ -11,6 +11,10 @@ export const DefaultTenancy = {
 
   propertyDetails: {
     rentalAddress: "",
+    rentalCity: "",
+    route: "",
+    rentalPostalCode: "",
+    streetNumber: "",
     room: "",
     rentAmount: "",
     rentStartDate: "",
@@ -26,6 +30,10 @@ export const DefaultTenancy = {
 
   tenantPersonalDetails: {
     tenantsAddress: "",
+    city: "",
+    route: "",
+    postalCode: "",
+    streetNumber: "",
     documentType: "",
     documentNumber: "",
     monthlyNetIncome: "",
