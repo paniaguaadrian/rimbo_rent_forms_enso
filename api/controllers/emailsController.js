@@ -240,6 +240,75 @@ const sendE1REmailEmails = async (req, res) => {
   res.status(200).json();
 };
 
+// ! E1R Email => E2PM (email to Rimbo) To know that the email to tenant is sent!
+const sendRimboConfEmail = async (req, res) => {
+  const {
+    tenantsName,
+    tenantsEmail,
+    randomID,
+    agencyName,
+    rentalAddress,
+    room,
+    tenancyID,
+    rentStartDate,
+    rentEndDate,
+  } = req.body;
+
+  const transporterRCE = nodemailer.createTransport(
+    sgTransport({
+      auth: {
+        api_key: process.env.SENDGRID_API,
+      },
+    })
+  );
+
+  let optionsRCE = {
+    viewEngine: {
+      extname: ".handlebars",
+      layoutsDir: "views/",
+      defaultLayout: "RimboConfirmEmailEn",
+    },
+    viewPath: "views/",
+  };
+
+  transporterRCE.use("compile", hbs(optionsRCE));
+
+  const RimboEmail = {
+    from: "Enso & Rimbo info@rimbo.rent",
+    to: rimboEmail, // Rimbo Email
+    subject: `${tenantsName} was acccepted by Rimbo`,
+    attachments: [
+      {
+        filename: "enso-logo.png",
+        path: "./views/images/enso-logo.png",
+        cid: "ensologo",
+      },
+    ],
+    template: "RimboConfirmEmailEn",
+    context: {
+      tenantsName,
+      tenantsEmail,
+      randomID,
+      agencyName,
+      rentalAddress,
+      room,
+      tenancyID,
+      rentStartDate,
+      rentEndDate,
+    },
+  };
+
+  transporterRCE.sendMail(RimboEmail, (err, data) => {
+    if (err) {
+      console.log("There is an error here...!" + err);
+    } else {
+      console.log("Email sent!");
+    }
+  });
+
+  res.status(200).json();
+};
+
 // ! F2SC Form => E2R (email to Rimbo that informs tenant is on F2SC)
 const sendNotificationRimbo = async (req, res) => {
   const { tenantsName, tenantsEmail, tenantsPhone, agencyName, randomID } =
@@ -913,6 +982,7 @@ const sendF2SCFormEmailsEn = async (req, res) => {
 export {
   sendF1SCFormEmails,
   sendE1REmailEmails,
+  sendRimboConfEmail,
   sendNotificationRimbo,
   sendF2SCFormEmails,
   sendF1SCFormEmailsEn,
